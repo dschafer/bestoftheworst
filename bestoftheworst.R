@@ -157,7 +157,7 @@ main <- function(year_range = 1975:2021) {
   best_goalies <- all_players %>%
     filter(Pos == "G") %>%
     slice_max(Value, n = 12, with_ties = FALSE)
-  wyshinski_roster <- c(
+  wyshynski_roster <- c(
     "Pat LaFontaine",
     "Joe Sakic",
     "Nathan MacKinnon",
@@ -224,7 +224,7 @@ main <- function(year_range = 1975:2021) {
     "Robin Lehner"
     )
   rosters <- bind_rows(
-    tibble(Player = wyshinski_roster, Roster = "Wyshinski"),
+    tibble(Player = wyshynski_roster, Roster = "Wyshynski"),
     tibble(Player = lambert_roster, Roster = "Lambert"),
     tibble(Player = mcindoe_roster, Roster = "McIndoe"),
   )
